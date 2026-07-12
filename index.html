@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSB Construction — Ремонт и строительство под ключ</title>
+    <meta name="description" content="BSB Construction: комплексный ремонт жилых и коммерческих помещений под ключ. От инженерного проектирования до сдачи готового объекта. 150+ проектов, 12+ лет опыта.">
+    <meta name="keywords" content="ремонт под ключ, строительная компания, ремонт квартир, ремонт офисов, дизайн интерьера, инженерное проектирование">
+    <meta name="author" content="BSB Construction">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0B1120">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bsbconstruction.ru">
+    <meta property="og:title" content="BSB Construction — Ремонт и строительство под ключ">
+    <meta property="og:description" content="Комплексный ремонт жилых и коммерческих помещений. От проектирования до сдачи объекта.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:locale" content="ru_RU">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BSB Construction">
+    <meta name="twitter:description" content="Комплексный ремонт и строительство под ключ.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ConstructionCompany",
+      "name": "BSB Construction",
+      "description": "Комплексный ремонт жилых и коммерческих помещений под ключ",
+      "url": "https://bsbgeorgia.com",
+      "telephone": "+995 597 970 410",
+      "email": "info@bsbgeorgia.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Кабаладзе 4",
+        "addressLocality": "Батуми",
+        "addressCountry": "GE"
+      },
+      "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200",
+      "priceRange": "$$$",
+      "openingHours": "Mo-Fr 09:00-19:00"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#E5C54B',
+                            dark: '#B59020',
+                            50: '#FBF6E6'
+                        },
+                        dark: {
+                            DEFAULT: '#0B1120',
+                            light: '#111A2E',
+                            softer: '#151E32',
+                            graphite: '#1E293B'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(11, 17, 32, 0.82), rgba(11, 17, 32, 0.7)), url('background.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-bg {
+            background-image: linear-gradient(rgba(11, 17, 32, 0.88), rgba(11, 17, 32, 0.85)), url('background2.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
+        .delay-300 { transition-delay: 0.3s; }
+
+        .btn-primary {
+            background-color: #D4AF37;
+            color: white;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: 0.375rem;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .btn-primary:hover {
+            background-color: #B59020;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .btn-outline:hover {
+            background: white;
+            color: #0B1120;
+        }
+
+        .service-card {
+            transition: all 0.4s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+        }
+        .service-card:hover .service-icon {
+            background-color: #D4AF37;
+            color: white;
+        }
+
+        .project-card {
+            transition: all 0.4s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+        .project-card:hover .project-img {
+            transform: scale(1.05);
+        }
+        .project-overlay {
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .nav-scrolled {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        .nav-scrolled .nav-link { color: #0B1120; }
+        .nav-scrolled .logo-text { color: #0B1120; }
+        .nav-scrolled .mobile-btn { color: #0B1120; }
+
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            border: 1px solid #e5e7eb;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.3s;
+            cursor: pointer;
+            background: white;
+            color: #4b5563;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background-color: #0B1120;
+            color: white;
+            border-color: #0B1120;
+        }
+
+        .testimonial-track {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .back-to-top {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #B59020; }
+
+        .input-field {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border-radius: 0.375rem;
+            border: 1px solid #e2e8f0;
+            background: #f8fafc;
+            transition: all 0.3s;
+            outline: none;
+        }
+        .input-field:focus {
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+        }
+        .input-field-dark {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border-radius: 0.375rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.08);
+            color: white;
+            transition: all 0.3s;
+            outline: none;
+        }
+        .input-field-dark::placeholder { color: #94a3b8; }
+        .input-field-dark:focus {
+            border-color: #D4AF37;
+            background: rgba(255,255,255,0.12);
+        }
+
+        .stage-line-h {
+            position: absolute;
+            top: 1.25rem;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #D4AF37;
+        }
+        .stage-circle {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background: #D4AF37;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 0.875rem;
+            border: 4px solid white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 10;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-600 antialiased bg-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent text-white py-5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center gap-3">
+                    <img src="logo.png" alt="BSB Construction Logo" class="h-24 w-auto object-contain">
+                    <div class="logo-text font-serif text-2xl font-bold tracking-wide">BSB Construction</div>
+                </a>
+                
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="#about" class="nav-link hover:text-gold transition-colors text-sm font-medium uppercase tracking-wider">О компании</a>
+                    <a href="#services" class="nav-link hover:text-gold transition-colors text-sm font-medium uppercase tracking-wider">Услуги</a>
+                    <a href="#stages" class="nav-link hover:text-gold transition-colors text-sm font-medium uppercase tracking-wider">Этапы</a>
+                    <a href="#projects" class="nav-link hover:text-gold transition-colors text-sm font-medium uppercase tracking-wider">Проекты</a>
+                    <a href="#contacts" class="nav-link hover:text-gold transition-colors text-sm font-medium uppercase tracking-wider">Контакты</a>
+                    <a href="#contact" class="bg-gold hover:bg-gold-dark text-white px-6 py-2.5 rounded text-sm font-semibold transition-all shadow hover:shadow-lg">
+                        Получить консультацию
+                    </a>
+                </div>
+
+                <button id="mobile-btn" class="mobile-btn lg:hidden text-2xl p-2">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 w-80 h-full bg-white shadow-2xl z-50 p-8 overflow-y-auto">
+            <button id="close-menu" class="absolute top-6 right-6 text-2xl text-dark">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="mt-16 flex flex-col gap-6">
+                <a href="#about" class="mobile-link text-dark hover:text-gold text-lg font-medium transition-colors">О компании</a>
+                <a href="#services" class="mobile-link text-dark hover:text-gold text-lg font-medium transition-colors">Услуги</a>
+                <a href="#stages" class="mobile-link text-dark hover:text-gold text-lg font-medium transition-colors">Этапы работы</a>
+                <a href="#projects" class="mobile-link text-dark hover:text-gold text-lg font-medium transition-colors">Проекты</a>
+                <a href="#contacts" class="mobile-link text-dark hover:text-gold text-lg font-medium transition-colors">Контакты</a>
+                <a href="#contact" class="bg-gold text-white px-6 py-3 rounded text-center font-semibold hover:bg-gold-dark transition-colors mt-4">Получить консультацию</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="text-white">
+                    <div class="flex items-center gap-3 mb-6 fade-in">
+                        <div class="h-px w-12 bg-gold"></div>
+                        <span class="text-gold uppercase tracking-widest text-sm font-bold">Строительная компания</span>
+                    </div>
+                    <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 fade-in delay-100">
+                        BSB <span class="text-gold">Construction</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl font-light text-gray-200 mb-6 italic font-serif fade-in delay-200">
+                        От инженерного проектирования до сдачи готового объекта.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-10 max-w-xl leading-relaxed fade-in delay-300">
+                        Выполняем комплексный ремонт жилых и коммерческих помещений любой сложности. 
+                        Полный цикл работ — проектирование, инженерные системы, отделка, комплектация и сдача готового объекта.
+                    </p>
+                    <div class="flex flex-wrap gap-4 fade-in delay-300">
+                        <a href="#contact" class="btn-primary">
+                            <span>Получить консультацию</span>
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#services" class="btn-outline">
+                            Рассчитать стоимость
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20 shadow-2xl fade-in delay-300">
+                    <h3 class="text-white text-2xl font-serif font-bold mb-2">Быстрый расчет стоимости</h3>
+                    <p class="text-gray-300 text-sm mb-6">Заполните форму — мы свяжемся с Вами в течение 15 минут</p>
+                    <form id="heroForm" class="space-y-4">
+                        <input type="text" placeholder="Ваше имя" required class="input-field-dark">
+                        <input type="tel" placeholder="Телефон" required class="input-field-dark">
+                        <input type="email" placeholder="Email" class="input-field-dark">
+                        <textarea placeholder="Краткое описание проекта" rows="3" required class="input-field-dark resize-none"></textarea>
+                        <button type="submit" class="w-full bg-gold hover:bg-gold-dark text-white font-bold py-3.5 rounded transition-all hover:shadow-lg">
+                            Получить расчет
+                        </button>
+                    </form>
+                    <p class="text-gray-400 text-xs text-center mt-4">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#about" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 hover:text-white transition-colors animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative fade-in">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="image1.png" alt="Modern interior" class="w-full h-[500px] object-cover">
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 bg-dark text-white p-8 rounded-xl shadow-xl max-w-xs hidden md:block">
+                        <div class="text-4xl font-serif font-bold text-gold mb-1">1+</div>
+                        <div class="text-sm uppercase tracking-wider text-gray-300">Лет на рынке</div>
+                    </div>
+                </div>
+                
+                <div class="fade-in delay-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="h-px w-12 bg-gold"></div>
+                        <span class="text-gold uppercase tracking-widest text-sm font-bold">О компании</span>
+                    </div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-dark mb-6">Почему выбирают<br>BSB Construction</h2>
+                    <p class="text-gray-500 text-lg leading-relaxed mb-10">
+                        Мы реализуем проекты полного цикла, начиная с инженерного проектирования и заканчивая сдачей полностью готового объекта. Работаем прозрачно, соблюдаем сроки и контролируем качество на каждом этапе.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gold text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Комплексный подход</h4>
+                                <p class="text-sm text-gray-500 mt-1">Все работы от проекта до сдачи</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gold text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Собственная команда</h4>
+                                <p class="text-sm text-gray-500 mt-1">Квалифицированные специалисты</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gold text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Прозрачная смета</h4>
+                                <p class="text-sm text-gray-500 mt-1">Фиксированная стоимость работ</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gold text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Контроль качества</h4>
+                                <p class="text-sm text-gray-500 mt-1">Многоуровневая проверка</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gold text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Соблюдение сроков</h4>
+                                <p class="text-sm text-gray-500 mt-1">Четкое планирование</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gold text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Современные технологии</h4>
+                                <p class="text-sm text-gray-500 mt-1">Качественные материалы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="h-px w-12 bg-gold"></div>
+                    <span class="text-gold uppercase tracking-widest text-sm font-bold">Услуги</span>
+                    <div class="h-px w-12 bg-gold"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">Наши направления</h2>
+                <p class="text-gray-400 text-lg">Полный спектр строительных и отделочных работ для частных и корпоративных клиентов.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-dark-softer rounded-xl overflow-hidden group fade-in">
+                    <div class="h-52 overflow-hidden">
+                        <img src="image2.png" alt="Engineering" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="service-icon w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-4 transition-all">
+                            <i class="fas fa-drafting-compass text-gold text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Инженерное проектирование</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Разработка инженерных решений и технической документации.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-dark-softer rounded-xl overflow-hidden group fade-in delay-100">
+                    <div class="h-52 overflow-hidden">
+                        <img src="image3.png" alt="Apartment" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="service-icon w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-4 transition-all">
+                            <i class="fas fa-building text-gold text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Ремонт квартир</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Капитальный и дизайнерский ремонт под ключ.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-dark-softer rounded-xl overflow-hidden group fade-in delay-200">
+                    <div class="h-52 overflow-hidden">
+                        <img src="image4.png" alt="House" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="service-icon w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-4 transition-all">
+                            <i class="fas fa-home text-gold text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Ремонт домов</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Комплексная реконструкция частных домов.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-dark-softer rounded-xl overflow-hidden group fade-in">
+                    <div class="h-52 overflow-hidden">
+                        <img src="image5.png" alt="Commercial" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="service-icon w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-4 transition-all">
+                            <i class="fas fa-briefcase text-gold text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Коммерческие помещения</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Офисы, рестораны, магазины, медицинские центры.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-dark-softer rounded-xl overflow-hidden group fade-in delay-100">
+                    <div class="h-52 overflow-hidden">
+                        <img src="image6.png" alt="Systems" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="service-icon w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-4 transition-all">
+                            <i class="fas fa-wrench text-gold text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Инженерные системы</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Электрика, сантехника, кондиционирование и вентиляция, отопление, слаботочные системы.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-dark-softer rounded-xl overflow-hidden group fade-in delay-200">
+                    <div class="h-52 overflow-hidden">
+                        <img src="image7.png" alt="Design" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="service-icon w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-4 transition-all">
+                            <i class="fas fa-palette text-gold text-xl"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-2">Дизайн интерьера</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Создание функциональных и современных пространств.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stages Section -->
+    <section id="stages" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="h-px w-12 bg-gold"></div>
+                    <span class="text-gold uppercase tracking-widest text-sm font-bold">Процесс</span>
+                    <div class="h-px w-12 bg-gold"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-dark mb-6">Этапы работы</h2>
+                <p class="text-gray-500 text-lg">Четко выстроенный процесс, который гарантирует результат без стресса и неожиданностей.</p>
+            </div>
+
+            <!-- Desktop Horizontal Timeline -->
+            <div class="hidden lg:block relative fade-in">
+                <div class="stage-line-h"></div>
+                <div class="grid grid-cols-9 gap-2">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="stage-circle mb-4">1</div>
+                        <h4 class="font-bold text-dark text-sm">Заявка</h4>
+                        <p class="text-xs text-gray-500 mt-1">Оставляете заявку</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="stage-circle mb-4">2</div>
+                        <h4 class="font-bold text-dark text-sm">Консультация</h4>
+                        <p class="text-xs text-gray-500 mt-1">Обсуждаем задачи</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="stage-circle mb-4">3</div>
+                        <h4 class="font-bold text-dark text-sm">Замер</h4>
+                        <p class="text-xs text-gray-500 mt-1">Выезд инженера на объект</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="stage-circle mb-4">4</div>
+                        <h4 class="font-bold text-dark text-sm">Проект</h4>
+                        <p class="text-xs text-gray-500 mt-1">Разработка документации</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="stage-circle mb-4">5</div>
+                        <h4 class="font-bold text-dark text-sm">Смета</h4>
+                        <p class="text-xs text-gray-500 mt-1">Прозрачный расчет</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="stage-circle mb-4">6</div>
+                        <h4 class="font-bold text-dark text-sm">Договор</h4>
+                        <p class="text-xs text-gray-500 mt-1">Фиксируем условия</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="stage-circle mb-4">7</div>
+                        <h4 class="font-bold text-dark text-sm">Работы</h4>
+                        <p class="text-xs text-gray-500 mt-1">Выполнение ремонта</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="stage-circle mb-4">8</div>
+                        <h4 class="font-bold text-dark text-sm">Контроль</h4>
+                        <p class="text-xs text-gray-500 mt-1">Проверка качества</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="stage-circle mb-4">9</div>
+                        <h4 class="font-bold text-dark text-sm">Сдача</h4>
+                        <p class="text-xs text-gray-500 mt-1">Готовый объект</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Vertical Timeline -->
+            <div class="lg:hidden space-y-6 relative pl-8 fade-in">
+                <div class="absolute left-3 top-0 bottom-0 w-0.5 bg-gold"></div>
+                
+                <div class="relative flex items-start gap-4">
+                    <div class="absolute left-3 top-2 -translate-x-1/2 w-6 h-6 bg-gold rounded-full border-2 border-white shadow z-10"></div>
+                    <div class="pl-8">
+                        <span class="text-xs font-bold text-gold uppercase tracking-wider">Этап 1</span>
+                        <h4 class="font-bold text-dark">Заявка</h4>
+                        <p class="text-sm text-gray-500">Оставляете заявку на сайте или по телефону</p>
+                    </div>
+                </div>
+                <div class="relative flex items-start gap-4">
+                    <div class="absolute left-3 top-2 -translate-x-1/2 w-6 h-6 bg-gold rounded-full border-2 border-white shadow z-10"></div>
+                    <div class="pl-8">
+                        <span class="text-xs font-bold text-gold uppercase tracking-wider">Этап 2</span>
+                        <h4 class="font-bold text-dark">Консультация</h4>
+                        <p class="text-sm text-gray-500">Обсуждаем задачи и пожелания</p>
+                    </div>
+                </div>
+                <div class="relative flex items-start gap-4">
+                    <div class="absolute left-3 top-2 -translate-x-1/2 w-6 h-6 bg-gold rounded-full border-2 border-white shadow z-10"></div>
+                    <div class="pl-8">
+                        <span class="text-xs font-bold text-gold uppercase tracking-wider">Этап 3</span>
+                        <h4 class="font-bold text-dark">Замер объекта</h4>
+                        <p class="text-sm text-gray-500">Выезд специалиста на объект</p>
+                    </div>
+                </div>
+                <div class="relative flex items-start gap-4">
+                    <div class="absolute left-3 top-2 -translate-x-1/2 w-6 h-6 bg-gold rounded-full border-2 border-white shadow z-10"></div>
+                    <div class="pl-8">
+                        <span class="text-xs font-bold text-gold uppercase tracking-wider">Этап 4</span>
+                        <h4 class="font-bold text-dark">Проектирование</h4>
+                        <p class="text-sm text-gray-500">Разработка проектной документации</p>
+                    </div>
+                </div>
+                <div class="relative flex items-start gap-4">
+                    <div class="absolute left-3 top-2 -translate-x-1/2 w-6 h-6 bg-gold rounded-full border-2 border-white shadow z-10"></div>
+                    <div class="pl-8">
+                        <span class="text-xs font-bold text-gold uppercase tracking-wider">Этап 5</span>
+                        <h4 class="font-bold text-dark">Смета</h4>
+                        <p class="text-sm text-gray-500">Прозрачный расчет стоимости</p>
+                    </div>
+                </div>
+                <div class="relative flex items-start gap-4">
+                    <div class="absolute left-3 top-2 -translate-x-1/2 w-6 h-6 bg-gold rounded-full border-2 border-white shadow z-10"></div>
+                    <div class="pl-8">
+                        <span class="text-xs font-bold text-gold uppercase tracking-wider">Этап 6</span>
+                        <h4 class="font-bold text-dark">Заключение договора</h4>
+                        <p class="text-sm text-gray-500">Фиксируем сроки и стоимость</p>
+                    </div>
+                </div>
+                <div class="relative flex items-start gap-4">
+                    <div class="absolute left-3 top-2 -translate-x-1/2 w-6 h-6 bg-gold rounded-full border-2 border-white shadow z-10"></div>
+                    <div class="pl-8">
+                        <span class="text-xs font-bold text-gold uppercase tracking-wider">Этап 7</span>
+                        <h4 class="font-bold text-dark">Выполнение работ</h4>
+                        <p class="text-sm text-gray-500">Строительно-отделочные работы</p>
+                    </div>
+                </div>
+                <div class="relative flex items-start gap-4">
+                    <div class="absolute left-3 top-2 -translate-x-1/2 w-6 h-6 bg-gold rounded-full border-2 border-white shadow z-10"></div>
+                    <div class="pl-8">
+                        <span class="text-xs font-bold text-gold uppercase tracking-wider">Этап 8</span>
+                        <h4 class="font-bold text-dark">Контроль качества</h4>
+                        <p class="text-sm text-gray-500">Многоуровневая проверка</p>
+                    </div>
+                </div>
+                <div class="relative flex items-start gap-4">
+                    <div class="absolute left-3 top-2 -translate-x-1/2 w-6 h-6 bg-gold rounded-full border-2 border-white shadow z-10"></div>
+                    <div class="pl-8">
+                        <span class="text-xs font-bold text-gold uppercase tracking-wider">Этап 9</span>
+                        <h4 class="font-bold text-dark">Сдача объекта</h4>
+                        <p class="text-sm text-gray-500">Передача готового объекта</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 fade-in">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="h-px w-12 bg-gold"></div>
+                    <span class="text-gold uppercase tracking-widest text-sm font-bold">Портфолио</span>
+                    <div class="h-px w-12 bg-gold"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-dark mb-6">Наши проекты</h2>
+                <p class="text-gray-500 text-lg">Каждый объект — это сочетание эстетики, функциональности и безупречного качества.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12 fade-in">
+                <button class="filter-btn active" data-filter="all">Все проекты</button>
+                <button class="filter-btn" data-filter="residential">Квартиры</button>
+                <button class="filter-btn" data-filter="house">Дома</button>
+                <button class="filter-btn" data-filter="commercial">Коммерция</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsGrid">
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-sm group fade-in" data-category="residential">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="image13.png" alt="Project" class="project-img w-full h-full object-cover transition-transform duration-500">
+                        <div class="project-overlay absolute inset-0 bg-dark/80 flex flex-col justify-center items-center text-center p-6">
+                            <h4 class="text-white font-serif text-xl font-bold mb-2">Пентхаус</h4>
+                            <p class="text-gray-300 text-sm mb-4">Современный минимализм с элементами ар-деко</p>
+                            <a href="#contact" class="text-gold border border-gold px-4 py-2 rounded text-sm font-semibold hover:bg-gold hover:text-white transition-all">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-serif text-lg font-bold text-dark">Пентхаус</h3>
+                            <span class="text-xs font-bold text-gold bg-gold/10 px-2 py-1 rounded">Квартира</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                            <span><i class="fas fa-ruler-combined mr-1"></i> 240 м²</span>
+                            <span><i class="fas fa-clock mr-1"></i> 4 мес.</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">Полный ремонт с авторским надзором. Премиальные материалы.</p>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-sm group fade-in delay-100" data-category="house">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="image12.png" alt="Project" class="project-img w-full h-full object-cover transition-transform duration-500">
+                        <div class="project-overlay absolute inset-0 bg-dark/80 flex flex-col justify-center items-center text-center p-6">
+                            <h4 class="text-white font-serif text-xl font-bold mb-2">Загородный дом</h4>
+                            <p class="text-gray-300 text-sm mb-4">Скандинавский стиль с панорамным остеклением</p>
+                            <a href="#contact" class="text-gold border border-gold px-4 py-2 rounded text-sm font-semibold hover:bg-gold hover:text-white transition-all">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-serif text-lg font-bold text-dark">Загородный дом</h3>
+                            <span class="text-xs font-bold text-gold bg-gold/10 px-2 py-1 rounded">Дом</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                            <span><i class="fas fa-ruler-combined mr-1"></i> 320 м²</span>
+                            <span><i class="fas fa-clock mr-1"></i> 8 мес.</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">Строительство и отделка под ключ. Полный цикл.</p>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-sm group fade-in delay-200" data-category="commercial">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="image11.png" alt="Project" class="project-img w-full h-full object-cover transition-transform duration-500">
+                        <div class="project-overlay absolute inset-0 bg-dark/80 flex flex-col justify-center items-center text-center p-6">
+                            <h4 class="text-white font-serif text-xl font-bold mb-2">Офис IT-компании</h4>
+                            <p class="text-gray-300 text-sm mb-4">Лофт-стиль с открытыми пространствами</p>
+                            <a href="#contact" class="text-gold border border-gold px-4 py-2 rounded text-sm font-semibold hover:bg-gold hover:text-white transition-all">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-serif text-lg font-bold text-dark">Офис IT-компании</h3>
+                            <span class="text-xs font-bold text-gold bg-gold/10 px-2 py-1 rounded">Коммерция</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                            <span><i class="fas fa-ruler-combined mr-1"></i> 400 м²</span>
+                            <span><i class="fas fa-clock mr-1"></i> 3 мес.</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">Коммерческий ремонт с работой в ночное время.</p>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-sm group fade-in" data-category="residential">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="image10.png" alt="Project" class="project-img w-full h-full object-cover transition-transform duration-500">
+                        <div class="project-overlay absolute inset-0 bg-dark/80 flex flex-col justify-center items-center text-center p-6">
+                            <h4 class="text-white font-serif text-xl font-bold mb-2">Кухня-гостиная</h4>
+                            <p class="text-gray-300 text-sm mb-4">Итальянская мебель и премиальная техника</p>
+                            <a href="#contact" class="text-gold border border-gold px-4 py-2 rounded text-sm font-semibold hover:bg-gold hover:text-white transition-all">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-serif text-lg font-bold text-dark">Кухня-гостиная</h3>
+                            <span class="text-xs font-bold text-gold bg-gold/10 px-2 py-1 rounded">Квартира</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                            <span><i class="fas fa-ruler-combined mr-1"></i> 65 м²</span>
+                            <span><i class="fas fa-clock mr-1"></i> 2 мес.</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">Совмещенное пространство с островом и барной зоной.</p>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-sm group fade-in delay-100" data-category="house">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="image9.png" alt="Project" class="project-img w-full h-full object-cover transition-transform duration-500">
+                        <div class="project-overlay absolute inset-0 bg-dark/80 flex flex-col justify-center items-center text-center p-6">
+                            <h4 class="text-white font-serif text-xl font-bold mb-2">Таунхаус</h4>
+                            <p class="text-gray-300 text-sm mb-4">Современная классика с камином</p>
+                            <a href="#contact" class="text-gold border border-gold px-4 py-2 rounded text-sm font-semibold hover:bg-gold hover:text-white transition-all">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-serif text-lg font-bold text-dark">Таунхаус</h3>
+                            <span class="text-xs font-bold text-gold bg-gold/10 px-2 py-1 rounded">Дом</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                            <span><i class="fas fa-ruler-combined mr-1"></i> 180 м²</span>
+                            <span><i class="fas fa-clock mr-1"></i> 5 мес.</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">Реконструкция и полная отделка с лестницей на второй этаж.</p>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-sm group fade-in delay-200" data-category="commercial">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="image8.png" alt="Project" class="project-img w-full h-full object-cover transition-transform duration-500">
+                        <div class="project-overlay absolute inset-0 bg-dark/80 flex flex-col justify-center items-center text-center p-6">
+                            <h4 class="text-white font-serif text-xl font-bold mb-2">Ресторан</h4>
+                            <p class="text-gray-300 text-sm mb-4">Интерьер премиального ресторана</p>
+                            <a href="#contact" class="text-gold border border-gold px-4 py-2 rounded text-sm font-semibold hover:bg-gold hover:text-white transition-all">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-serif text-lg font-bold text-dark">Ресторан</h3>
+                            <span class="text-xs font-bold text-gold bg-gold/10 px-2 py-1 rounded">Коммерция</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                            <span><i class="fas fa-ruler-combined mr-1"></i> 250 м²</span>
+                            <span><i class="fas fa-clock mr-1"></i> 3,5 мес.</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">Комплексный ремонт с уникальными декоративными элементами.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="fade-in">
+                    <div class="text-4xl md:text-5xl font-serif font-bold text-gold mb-2"><span class="counter" data-target="20">0</span>+</div>
+                    <div class="text-gray-400 uppercase tracking-wider text-sm">Реализованных проектов</div>
+                </div>
+                <div class="fade-in delay-100">
+                    <div class="text-4xl md:text-5xl font-serif font-bold text-gold mb-2"><span class="counter" data-target="1">0</span>+</div>
+                    <div class="text-gray-400 uppercase tracking-wider text-sm">Лет опыта</div>
+                </div>
+                <div class="fade-in delay-200">
+                    <div class="text-4xl md:text-5xl font-serif font-bold text-gold mb-2"><span class="counter" data-target="99">0</span>%</div>
+                    <div class="text-gray-400 uppercase tracking-wider text-sm">Довольных клиентов</div>
+                </div>
+                <div class="fade-in delay-300">
+                    <div class="text-4xl md:text-5xl font-serif font-bold text-gold mb-2"><span class="counter" data-target="100">0</span>%</div>
+                    <div class="text-gray-400 uppercase tracking-wider text-sm">Соблюдение стандартов</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="h-px w-12 bg-gold"></div>
+                    <span class="text-gold uppercase tracking-widest text-sm font-bold">Отзывы</span>
+                    <div class="h-px w-12 bg-gold"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-dark mb-6">Что говорят клиенты</h2>
+            </div>
+
+            <div class="relative fade-in">
+                <div class="overflow-hidden">
+                    <div id="testimonialTrack" class="testimonial-track flex">
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-8 rounded-xl h-full">
+                                <div class="flex text-gold mb-4 text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="text-gray-600 mb-6 leading-relaxed">"BSB Construction сделали ремонт нашей трехкомнатной квартиры за 3 месяца. Все четко по смете, без сюрпризов. Качество на высоте!"</p>
+                                <div class="flex items-center gap-4">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                                    <div>
+                                        <div class="font-bold text-dark">Алексей К.</div>
+                                        <div class="text-sm text-gray-500">Ремонт квартиры, 120 м²</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-8 rounded-xl h-full">
+                                <div class="flex text-gold mb-4 text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="text-gray-600 mb-6 leading-relaxed">"Заказывали ремонт офиса. Команда работала в выходные, чтобы не мешать сотрудникам. Очень профессиональный подход."</p>
+                                <div class="flex items-center gap-4">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                                    <div>
+                                        <div class="font-bold text-dark">Марина Р.</div>
+                                        <div class="text-sm text-gray-500">Офис, 200 м²</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-8 rounded-xl h-full">
+                                <div class="flex text-gold mb-4 text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="text-gray-600 mb-6 leading-relaxed">"Проектировали и строили дом с нуля. Полный цикл, от фундамента до отделки. Все в срок и с отличным качеством."</p>
+                                <div class="flex items-center gap-4">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                                    <div>
+                                        <div class="font-bold text-dark">Сергей В.</div>
+                                        <div class="text-sm text-gray-500">Строительство дома, 280 м²</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-8 rounded-xl h-full">
+                                <div class="flex text-gold mb-4 text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="text-gray-600 mb-6 leading-relaxed">"Дизайн интерьера и ремонт пентхауса. Результат превзошел ожидания. Все продумано до мелочей. Рекомендую!"</p>
+                                <div class="flex items-center gap-4">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                                    <div>
+                                        <div class="font-bold text-dark">Анна П.</div>
+                                        <div class="text-sm text-gray-500">Пентхаус, 240 м²</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-8 rounded-xl h-full">
+                                <div class="flex text-gold mb-4 text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="text-gray-600 mb-6 leading-relaxed">"Ремонт ресторана за 3,5 месяца. Сложный дизайн-проект с многоуровневыми потолками. Выполнено идеально."</p>
+                                <div class="flex items-center gap-4">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                                    <div>
+                                        <div class="font-bold text-dark">Дмитрий С.</div>
+                                        <div class="text-sm text-gray-500">Ресторан, 250 м²</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-8 rounded-xl h-full">
+                                <div class="flex text-gold mb-4 text-sm">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="text-gray-600 mb-6 leading-relaxed">"Инженерное проектирование и реконструкция здания. Профессиональная команда, четкая документация."</p>
+                                <div class="flex items-center gap-4">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                                    <div>
+                                        <div class="font-bold text-dark">Игорь М.</div>
+                                        <div class="text-sm text-gray-500">Коммерческий объект, 500 м²</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center gap-4 mt-10">
+                    <button id="prevBtn" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-dark hover:text-white hover:border-dark transition-all">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div id="dots" class="flex gap-2">
+                        <button class="w-3 h-3 rounded-full bg-gold transition-all" data-index="0"></button>
+                        <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gold transition-all" data-index="1"></button>
+                        <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gold transition-all" data-index="2"></button>
+                    </div>
+                    <button id="nextBtn" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-dark hover:text-white hover:border-dark transition-all">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-bg py-24 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 fade-in">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6">Готовы обсудить ваш проект?</h2>
+            <p class="text-gray-300 text-xl mb-10 max-w-2xl mx-auto">Оставьте заявку — мы подготовим предварительную оценку стоимости и сроков реализации.</p>
+            <a href="#contacts" class="btn-primary text-lg">
+                Получить консультацию
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="h-px w-12 bg-gold"></div>
+                    <span class="text-gold uppercase tracking-widest text-sm font-bold">Контакты</span>
+                    <div class="h-px w-12 bg-gold"></div>
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-dark mb-6">Свяжитесь с нами</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="fade-in">
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-5">
+                            <div class="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500 mb-1 uppercase tracking-wider font-semibold">Телефон</div>
+                                <a href="tel:+74951234567" class="text-dark font-bold text-xl hover:text-gold transition-colors">+995 597 970 410</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-5">
+                            <div class="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500 mb-1 uppercase tracking-wider font-semibold">Email</div>
+                                <a href="mailto:info@bsbgeorgia.com" class="text-dark font-bold text-xl hover:text-gold transition-colors">info@bsbgeorgia.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-5">
+                            <div class="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500 mb-1 uppercase tracking-wider font-semibold">Адрес</div>
+                                <div class="text-dark font-bold text-xl">Батуми, ул. Кабаладзе, 4</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-5">
+                            <div class="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock text-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500 mb-1 uppercase tracking-wider font-semibold">Часы работы</div>
+                                <div class="text-dark font-bold text-xl">Пн–Сб: 09:00 – 21:00</div>
+                            </div>
+                        </div>
+                    </div>
+
+<div class="mt-12">
+    <div class="text-sm text-gray-500 mb-4 uppercase tracking-wider font-semibold">Мы в соцсетях</div>
+    <div class="flex flex-wrap gap-3">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/black_sea_build_construction" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-dark hover:bg-gold text-white rounded-xl flex items-center justify-center transition-colors" title="Instagram">
+            <i class="fab fa-instagram text-lg"></i>
+        </a>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=61591989681789" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-dark hover:bg-gold text-white rounded-xl flex items-center justify-center transition-colors" title="Facebook">
+            <i class="fab fa-facebook-f text-lg"></i>
+        </a>
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-dark hover:bg-gold text-white rounded-xl flex items-center justify-center transition-colors" title="YouTube">
+            <i class="fab fa-youtube text-lg"></i>
+        </a>
+        <!-- Telegram -->
+        <a href="https://t.me/bsb_georgia" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-dark hover:bg-gold text-white rounded-xl flex items-center justify-center transition-colors" title="Telegram">
+            <i class="fab fa-telegram-plane text-lg"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/995597970410" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-dark hover:bg-gold text-white rounded-xl flex items-center justify-center transition-colors" title="WhatsApp">
+            <i class="fab fa-whatsapp text-lg"></i>
+        </a>
+    </div>
+</div>
+</div>
+
+
+                <div class="h-96 rounded-2xl overflow-hidden shadow-xl fade-in delay-100">
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.992545109489!2d41.6054457764394!3d41.63429257126962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406786131819deeb%3A0x592f800d0c50e052!2sApartment%20Kobaladze%204!5e0!3m2!1sru!2sus!4v1783803562061!5m2!1sru!2sus"
+    width="100%"
+    height="100%"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin">
+  </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16 border-t border-dark-graphite">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="logo.png" alt="BSB Construction Logo" class="h-24 w-auto object-contain">
+                        <div class="font-serif text-xl font-bold tracking-wide">BSB Construction</div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">От инженерного проектирования до сдачи готового объекта. </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-6 text-gold uppercase tracking-wider text-sm">Навигация</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors text-sm">О компании</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors text-sm">Услуги</a></li>
+                        <li><a href="#stages" class="text-gray-400 hover:text-white transition-colors text-sm">Этапы работы</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors text-sm">Проекты</a></li>
+                        <li><a href="#contacts" class="text-gray-400 hover:text-white transition-colors text-sm">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-6 text-gold uppercase tracking-wider text-sm">Услуги</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Инженерное проектирование</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Ремонт квартир</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Коммерческие помещения</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Дизайн интерьера</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-6 text-gold uppercase tracking-wider text-sm">Контакты</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fas fa-phone text-gold text-xs"></i> +995 597 970 410</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-envelope text-gold text-xs"></i> info@bsbgeorgia.com</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-gold text-xs"></i> Батуми, ул. Кабаладзе, 4</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-clock text-gold text-xs"></i> Пн–Сб: 09:00 – 21:00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-dark-graphite pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-gray-500 text-sm">© 2026 BSB Construction. Все права защищены.</div>
+<a href="#" id="openModal" class="text-gray-500 hover:text-white text-sm transition-colors">Политика конфиденциальности</a>
+                <div class="flex gap-4">
+<a href="https://www.instagram.com/black_sea_build_construction" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61591989681789" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+<a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://t.me/bsb_georgia" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://wa.me/995597970410" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top fixed bottom-8 right-8 w-12 h-12 bg-gold hover:bg-gold-dark text-white rounded-full shadow-lg flex items-center justify-center z-40 transition-all hover:-translate-y-1">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl p-8 max-w-md w-full text-center shadow-2xl transform transition-all scale-95 opacity-0" id="modalContent">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-check text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-dark mb-2">Заявка отправлена!</h3>
+            <p class="text-gray-500 mb-6">Мы свяжемся с вами в ближайшее время для уточнения деталей.</p>
+            <button id="closeModal" class="bg-dark hover:bg-dark-graphite text-white px-8 py-3 rounded-lg font-semibold transition-colors">Отлично</button>
+        </div>
+    </div>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+                navbar.classList.remove('py-5');
+                navbar.classList.add('py-2');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+                navbar.classList.add('py-5');
+                navbar.classList.remove('py-2');
+            }
+        });
+
+        // Mobile menu
+        const mobileBtn = document.getElementById('mobile-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+
+        mobileBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+        closeMenu.addEventListener('click', () => mobileMenu.classList.remove('open'));
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+        });
+
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) backToTop.classList.add('show');
+            else backToTop.classList.remove('show');
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Counter animation
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.counter');
+                    counters.forEach(counter => {
+                        const target = +counter.getAttribute('data-target');
+                        const duration = 2000;
+                        const increment = target / (duration / 16);
+                        let current = 0;
+                        const updateCounter = () => {
+                            current += increment;
+                            if (current < target) {
+                                counter.innerText = Math.ceil(current);
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                counter.innerText = target;
+                            }
+                        };
+                        updateCounter();
+                    });
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsSection = document.querySelector('.counter')?.closest('section');
+        if (statsSection) counterObserver.observe(statsSection);
+
+        // Testimonial Slider
+        const track = document.getElementById('testimonialTrack');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const dotsContainer = document.getElementById('dots');
+        let currentSlide = 0;
+        
+        function getVisibleItems() {
+            if (window.innerWidth >= 1024) return 3;
+            if (window.innerWidth >= 768) return 2;
+            return 1;
+        }
+        
+        function getTotalSlides() {
+            return 6 - getVisibleItems() + 1;
+        }
+        
+        function updateSlider() {
+            const visible = getVisibleItems();
+            const percentage = 100 / visible;
+            track.style.transform = `translateX(-${currentSlide * percentage}%)`;
+            
+            dotsContainer.querySelectorAll('button').forEach((dot, idx) => {
+                if (idx === currentSlide) {
+                    dot.classList.remove('bg-gray-300');
+                    dot.classList.add('bg-gold');
+                } else {
+                    dot.classList.remove('bg-gold');
+                    dot.classList.add('bg-gray-300');
+                }
+            });
+        }
+        
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) currentSlide--;
+            else currentSlide = getTotalSlides() - 1;
+            updateSlider();
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < getTotalSlides() - 1) currentSlide++;
+            else currentSlide = 0;
+            updateSlider();
+        });
+        
+        dotsContainer.querySelectorAll('button').forEach(dot => {
+            dot.addEventListener('click', () => {
+                currentSlide = parseInt(dot.getAttribute('data-index'));
+                updateSlider();
+            });
+        });
+        
+        window.addEventListener('resize', () => {
+            if (currentSlide >= getTotalSlides()) currentSlide = 0;
+            updateSlider();
+        });
+
+        // Project Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => card.style.display = 'none', 300);
+                    }
+                });
+            });
+        });
+
+        // Form handling
+        const modal = document.getElementById('successModal');
+        const modalContent = document.getElementById('modalContent');
+        const closeModal = document.getElementById('closeModal');
+
+        function openModal() {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        function hideModal() {
+            modalContent.classList.remove('scale-100', 'opacity-100');
+            modalContent.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+        }
+
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                openModal();
+                form.reset();
+            });
+        });
+
+        closeModal.addEventListener('click', hideModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) hideModal();
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const hero = document.getElementById('hero');
+            if (scrolled < window.innerHeight) {
+                hero.style.backgroundPositionY = `calc(50% + ${scrolled * 0.4}px)`;
+            }
+        });
+    </script>
+<!-- Ссылка для открытия -->
+<a href="#" id="openModal" class="text-gray-500 hover:text-white text-sm transition-colors">Политика конфиденциальности</a>
+
+<!-- Модальное окно -->
+<dialog id="privacyModal" class="p-8 rounded-lg shadow-2xl max-w-2xl w-full bg-white text-black backdrop:bg-black/70">
+  <div class="max-h-[80vh] overflow-y-auto pr-4">
+    <h2 class="text-2xl font-bold mb-6">Политика конфиденциальности BSB Construction</h2>
+    
+    <div class="space-y-4 text-sm leading-relaxed">
+      <p><strong>1. Общие положения</strong><br>Настоящая Политика конфиденциальности определяет порядок сбора, обработки и защиты персональных данных пользователей сайта bsbgeorgia.com (далее — «Сайт»), принадлежащего компании BSB Construction. Мы стремимся обеспечить высокий уровень защиты конфиденциальности наших клиентов и посетителей.</p>
+
+      <p><strong>2. Какие данные мы собираем</strong><br>Мы можем собирать следующие категории персональных данных:</p>
+      <ul class="list-disc pl-5">
+        <li>Контактные данные: имя, номер телефона, адрес электронной почты.</li>
+        <li>Технические данные: IP-адрес, тип браузера, информация о посещенных страницах.</li>
+      </ul>
+
+      <p><strong>3. Цели сбора данных</strong><br>Мы обрабатываем ваши данные для связи с вами, оформления договоров, улучшения работы сайта и информирования об акциях.</p>
+
+      <p><strong>4. Использование файлов Cookie</strong><br>Наш Сайт использует файлы cookie для корректного отображения контента и сбора аналитики. Вы можете отказаться от них в настройках браузера.</p>
+
+      <p><strong>5. Передача данных третьим лицам</strong><br>Мы не продаем данные. Передача возможна только согласно законодательству Грузии или для выполнения наших обязательств перед вами.</p>
+
+      <p><strong>6. Ваши права</strong><br>Вы имеете право на доступ, исправление, удаление своих данных и отзыв согласия на маркетинг.</p>
+
+      <p><strong>7. Безопасность</strong><br>Мы применяем технические и организационные меры для защиты ваших данных от несанкционированного доступа.</p>
+
+      <p><strong>8. Изменения политики</strong><br>Мы оставляем за собой право вносить изменения. Все обновления публикуются на этой странице.</p>
+
+      <p><strong>9. Контактная информация</strong><br>Если у вас возникли вопросы, свяжитесь с нами:<br>
+      Название компании: BSB Construction<br>
+      Email: [укажите ваш email]<br>
+      Адрес: [укажите ваш адрес в Грузии]</p>
+    </div>
+
+    <button id="closeModal" class="mt-8 w-full bg-gray-800 text-white py-2 rounded hover:bg-black transition-colors">Закрыть</button>
+  </div>
+</dialog>
+
+<!-- JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('privacyModal');
+    const openBtn = document.getElementById('openModal');
+    const closeBtn = document.getElementById('closeModal');
+
+    // Проверка, существуют ли элементы на странице, чтобы не было ошибок
+    if (openBtn && modal) {
+        openBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.showModal();
+ modal.scrollTop = 0;
+        });
+    }
+
+    if (closeBtn && modal) {
+        closeBtn.addEventListener('click', () => {
+            modal.close();
+        });
+
+        // Закрытие при клике на темный фон
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) modal.close();
+        });
+    }
+});
+</script>
+</body>
+</html>
